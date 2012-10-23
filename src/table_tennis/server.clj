@@ -1,9 +1,7 @@
 (ns table-tennis.server
   (:require [noir.server :as server]))
 
-(defdb table-tennis-db (mysql {:db "tt"
-                               :user "root"
-                               :password ""}))
+
 
 (server/load-views "src/table_tennis/views/")
 
